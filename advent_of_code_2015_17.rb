@@ -113,10 +113,10 @@ def shortest_route(distances)
 end
 
 # calculate the total distance to be traveled if taking the shortest route
-def shortest_distance_distance_to_travel(distances)
+def shortest_distance_to_travel(distances)
   min_dist = shortest_route(distances).map { |route| route[1] }.reduce(:+)
 
   "Santa has to travel at least #{min_dist}! Let's gooooooo!"
 end
 
-p shortest_distance_distance_to_travel(distances)
+p shortest_distance_to_travel(distances)
